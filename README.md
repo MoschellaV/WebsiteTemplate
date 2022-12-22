@@ -1,7 +1,88 @@
 # WebsiteTemplate
 ![makes people smile](https://forthebadge.com/images/badges/makes-people-smile.svg)
-![seo certified]([![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzMuNTQwMDAwMDAwMDAwMDIiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxNzMuNTQwMDAwMDAwMDAwMDIgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSI1NS4yNSIgaGVpZ2h0PSIzNSIgZmlsbD0iIzQxOUI1QSIvPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjUzLjI1IiB5PSIwIiB3aWR0aD0iMTIwLjI5IiBoZWlnaHQ9IjM1IiBmaWxsPSIjOEZDOTY1Ii8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEzLjc4IDE5LjQyTDEzLjc4IDE5LjQyTDE1LjI3IDE5LjQyUTE1LjI3IDIwLjE1IDE1Ljc1IDIwLjU1UTE2LjIzIDIwLjk1IDE3LjEyIDIwLjk1TDE3LjEyIDIwLjk1UTE3LjkwIDIwLjk1IDE4LjI5IDIwLjYzUTE4LjY4IDIwLjMyIDE4LjY4IDE5LjgwTDE4LjY4IDE5LjgwUTE4LjY4IDE5LjI0IDE4LjI4IDE4Ljk0UTE3Ljg5IDE4LjYzIDE2Ljg1IDE4LjMyUTE1LjgyIDE4LjAxIDE1LjIxIDE3LjYzTDE1LjIxIDE3LjYzUTE0LjA1IDE2LjkwIDE0LjA1IDE1LjcyTDE0LjA1IDE1LjcyUTE0LjA1IDE0LjY5IDE0Ljg5IDE0LjAyUTE1LjczIDEzLjM1IDE3LjA3IDEzLjM1TDE3LjA3IDEzLjM1UTE3Ljk2IDEzLjM1IDE4LjY2IDEzLjY4UTE5LjM2IDE0LjAxIDE5Ljc1IDE0LjYxUTIwLjE1IDE1LjIyIDIwLjE1IDE1Ljk2TDIwLjE1IDE1Ljk2TDE4LjY4IDE1Ljk2UTE4LjY4IDE1LjI5IDE4LjI2IDE0LjkxUTE3Ljg0IDE0LjU0IDE3LjA2IDE0LjU0TDE3LjA2IDE0LjU0UTE2LjMzIDE0LjU0IDE1LjkzIDE0Ljg1UTE1LjUzIDE1LjE2IDE1LjUzIDE1LjcxTDE1LjUzIDE1LjcxUTE1LjUzIDE2LjE4IDE1Ljk2IDE2LjUwUTE2LjQwIDE2LjgxIDE3LjM5IDE3LjEwUTE4LjM5IDE3LjQwIDE4Ljk5IDE3Ljc4UTE5LjYwIDE4LjE2IDE5Ljg4IDE4LjY1UTIwLjE2IDE5LjEzIDIwLjE2IDE5Ljc5TDIwLjE2IDE5Ljc5UTIwLjE2IDIwLjg2IDE5LjM0IDIxLjQ5UTE4LjUyIDIyLjEyIDE3LjEyIDIyLjEyTDE3LjEyIDIyLjEyUTE2LjIwIDIyLjEyIDE1LjQyIDIxLjc3UTE0LjY0IDIxLjQzIDE0LjIxIDIwLjgzUTEzLjc4IDIwLjIyIDEzLjc4IDE5LjQyWk0zMC4wMyAyMkwyNC40NSAyMkwyNC40NSAxMy40N0wyOS45OCAxMy40N0wyOS45OCAxNC42NkwyNS45MyAxNC42NkwyNS45MyAxNy4wMkwyOS40MyAxNy4wMkwyOS40MyAxOC4xOUwyNS45MyAxOC4xOUwyNS45MyAyMC44MkwzMC4wMyAyMC44MkwzMC4wMyAyMlpNMzMuOTUgMTguMDBMMzMuOTUgMTguMDBMMzMuOTUgMTcuNTJRMzMuOTUgMTYuMjggMzQuMzkgMTUuMzJRMzQuODQgMTQuMzcgMzUuNjQgMTMuODZRMzYuNDUgMTMuMzUgMzcuNDkgMTMuMzVRMzguNTMgMTMuMzUgMzkuMzQgMTMuODVRNDAuMTQgMTQuMzUgNDAuNTggMTUuMjlRNDEuMDIgMTYuMjMgNDEuMDMgMTcuNDhMNDEuMDMgMTcuNDhMNDEuMDMgMTcuOTZRNDEuMDMgMTkuMjEgNDAuNjAgMjAuMTZRNDAuMTYgMjEuMTAgMzkuMzYgMjEuNjFRMzguNTUgMjIuMTIgMzcuNTAgMjIuMTJMMzcuNTAgMjIuMTJRMzYuNDcgMjIuMTIgMzUuNjUgMjEuNjFRMzQuODQgMjEuMTAgMzQuNDAgMjAuMTdRMzMuOTYgMTkuMjMgMzMuOTUgMTguMDBaTTM1LjQzIDE3LjQ2TDM1LjQzIDE3Ljk2UTM1LjQzIDE5LjM2IDM1Ljk4IDIwLjEzUTM2LjUzIDIwLjkwIDM3LjUwIDIwLjkwTDM3LjUwIDIwLjkwUTM4LjQ5IDIwLjkwIDM5LjAyIDIwLjE1UTM5LjU1IDE5LjQwIDM5LjU1IDE3Ljk2TDM5LjU1IDE3Ljk2TDM5LjU1IDE3LjUxUTM5LjU1IDE2LjA5IDM5LjAxIDE1LjM0UTM4LjQ4IDE0LjU4IDM3LjQ5IDE0LjU4TDM3LjQ5IDE0LjU4UTM2LjUzIDE0LjU4IDM1Ljk5IDE1LjMzUTM1LjQ1IDE2LjA5IDM1LjQzIDE3LjQ2TDM1LjQzIDE3LjQ2WiIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGNsYXNzPSJzdmdfX3RleHQiIGQ9Ik02Ny4wMSAxNy44MEw2Ny4wMSAxNy44MFE2Ny4wMSAxNi41NCA2Ny42MSAxNS41NFE2OC4yMSAxNC41NSA2OS4yNiAxMy45OVE3MC4zMSAxMy40MyA3MS42MyAxMy40M0w3MS42MyAxMy40M1E3Mi43OCAxMy40MyA3My43MCAxMy44NFE3NC42MyAxNC4yNSA3NS4yNCAxNS4wMkw3NS4yNCAxNS4wMkw3My43MyAxNi4zOVE3Mi45MiAxNS40MCA3MS43NSAxNS40MEw3MS43NSAxNS40MFE3MS4wNiAxNS40MCA3MC41MyAxNS43MFE3MC4wMCAxNiA2OS43MCAxNi41NFE2OS40MSAxNy4wOSA2OS40MSAxNy44MEw2OS40MSAxNy44MFE2OS40MSAxOC41MSA2OS43MCAxOS4wNVE3MC4wMCAxOS42MCA3MC41MyAxOS45MFE3MS4wNiAyMC4yMCA3MS43NSAyMC4yMEw3MS43NSAyMC4yMFE3Mi45MiAyMC4yMCA3My43MyAxOS4yMkw3My43MyAxOS4yMkw3NS4yNCAyMC41OFE3NC42MyAyMS4zNSA3My43MSAyMS43NlE3Mi43OCAyMi4xNyA3MS42MyAyMi4xN0w3MS42MyAyMi4xN1E3MC4zMSAyMi4xNyA2OS4yNiAyMS42MVE2OC4yMSAyMS4wNSA2Ny42MSAyMC4wNVE2Ny4wMSAxOS4wNiA2Ny4wMSAxNy44MFpNODYuNTIgMjJMNzkuNzggMjJMNzkuNzggMTMuNjBMODYuMzcgMTMuNjBMODYuMzcgMTUuNDRMODIuMTMgMTUuNDRMODIuMTMgMTYuODVMODUuODcgMTYuODVMODUuODcgMTguNjNMODIuMTMgMTguNjNMODIuMTMgMjAuMTdMODYuNTIgMjAuMTdMODYuNTIgMjJaTTkzLjcxIDIyTDkxLjMzIDIyTDkxLjMzIDEzLjYwTDk1LjE3IDEzLjYwUTk2LjMxIDEzLjYwIDk3LjE1IDEzLjk4UTk3Ljk5IDE0LjM1IDk4LjQ1IDE1LjA2UTk4LjkwIDE1Ljc2IDk4LjkwIDE2LjcxTDk4LjkwIDE2LjcxUTk4LjkwIDE3LjYyIDk4LjQ3IDE4LjMwUTk4LjA1IDE4Ljk4IDk3LjI2IDE5LjM2TDk3LjI2IDE5LjM2TDk5LjA3IDIyTDk2LjUyIDIyTDk1LjAwIDE5Ljc3TDkzLjcxIDE5Ljc3TDkzLjcxIDIyWk05My43MSAxNS40N0w5My43MSAxNy45M0w5NS4wMiAxNy45M1E5NS43NiAxNy45MyA5Ni4xMyAxNy42MVE5Ni41MCAxNy4yOSA5Ni41MCAxNi43MUw5Ni41MCAxNi43MVE5Ni41MCAxNi4xMiA5Ni4xMyAxNS43OVE5NS43NiAxNS40NyA5NS4wMiAxNS40N0w5NS4wMiAxNS40N0w5My43MSAxNS40N1pNMTA1LjQ4IDE1LjQ4TDEwMi45MCAxNS40OEwxMDIuOTAgMTMuNjBMMTEwLjQyIDEzLjYwTDExMC40MiAxNS40OEwxMDcuODYgMTUuNDhMMTA3Ljg2IDIyTDEwNS40OCAyMkwxMDUuNDggMTUuNDhaTTExNy4xNyAyMkwxMTQuNzkgMjJMMTE0Ljc5IDEzLjYwTDExNy4xNyAxMy42MEwxMTcuMTcgMjJaTTEyNC43MiAyMkwxMjIuMzUgMjJMMTIyLjM1IDEzLjYwTDEyOC45NCAxMy42MEwxMjguOTQgMTUuNDRMMTI0LjcyIDE1LjQ0TDEyNC43MiAxNy4yOEwxMjguNDMgMTcuMjhMMTI4LjQzIDE5LjEyTDEyNC43MiAxOS4xMkwxMjQuNzIgMjJaTTEzNS45MSAyMkwxMzMuNTMgMjJMMTMzLjUzIDEzLjYwTDEzNS45MSAxMy42MEwxMzUuOTEgMjJaTTE0Ny44MyAyMkwxNDEuMDggMjJMMTQxLjA4IDEzLjYwTDE0Ny42OCAxMy42MEwxNDcuNjggMTUuNDRMMTQzLjQ0IDE1LjQ0TDE0My40NCAxNi44NUwxNDcuMTcgMTYuODVMMTQ3LjE3IDE4LjYzTDE0My40NCAxOC42M0wxNDMuNDQgMjAuMTdMMTQ3LjgzIDIwLjE3TDE0Ny44MyAyMlpNMTU2LjYxIDIyTDE1Mi42MyAyMkwxNTIuNjMgMTMuNjBMMTU2LjYxIDEzLjYwUTE1Ny45OSAxMy42MCAxNTkuMDYgMTQuMTJRMTYwLjEyIDE0LjYzIDE2MC43MSAxNS41OFExNjEuMzAgMTYuNTMgMTYxLjMwIDE3LjgwTDE2MS4zMCAxNy44MFExNjEuMzAgMTkuMDcgMTYwLjcxIDIwLjAyUTE2MC4xMiAyMC45NyAxNTkuMDYgMjEuNDhRMTU3Ljk5IDIyIDE1Ni42MSAyMkwxNTYuNjEgMjJaTTE1NS4wMSAxNS41MEwxNTUuMDEgMjAuMTBMMTU2LjUxIDIwLjEwUTE1Ny41OSAyMC4xMCAxNTguMjQgMTkuNDlRMTU4LjkwIDE4Ljg4IDE1OC45MCAxNy44MEwxNTguOTAgMTcuODBRMTU4LjkwIDE2LjcyIDE1OC4yNCAxNi4xMVExNTcuNTkgMTUuNTAgMTU2LjUxIDE1LjUwTDE1Ni41MSAxNS41MEwxNTUuMDEgMTUuNTBaIiBmaWxsPSIjRkZGRkZGIiB4PSI2Ni4yNSIvPjwvc3ZnPg==)](https://forthebadge.com))
+![seo-certified (1)](https://user-images.githubusercontent.com/58868225/209240783-79c923a5-3310-4a78-9254-be3859990f2c.svg)
+![built-with-next-js](https://user-images.githubusercontent.com/58868225/209240742-d74d63bf-ef68-4b85-95ba-cfc252d119e1.svg)
+
 This is a basic website template that I use for clients. It sets up the boilerplate for the project cutting out a lot of the 
 repetitive work. This allows me to focus on design and customizations so that I can perfect the site for the client.
 
+## The HTML Head
+### Things that are USED in this template's HTML Head
+#### Canonical Links
+Canonical links are a way for websites to tell search engines which version of a webpage should be considered the authoritative or "canonical" version. This helps search engines avoid indexing multiple copies of the same content and potentially penalizing a website for duplicate content. To use a canonical link, a website includes a link to the canonical version of the page in the HTML code of the page. This helps search engines understand which version of the page is the most important and should be indexed, and which versions should be ignored as duplicates. Canonical links are just one way that websites can signal to search engines which pages are most important and should be given priority in search results.
+```HTML
+<link rel="canonical" href="https://www.example.com/page1">
+```
 
+#### Meta & Title & Theme
+The "title" tag is simply the tite of the webpage.
+
+The "meta description" tag is a short summary of the webpage's content that is displayed in the search results. It is intended to give users an idea of what the webpage is about and help them decide whether to click on the search result or not. 
+
+The "meta keywords" tag is a list of keywords that are relevant to the webpage's content.  However, the "meta keywords" tag is not widely used anymore, as search engines have become more sophisticated and no longer rely on it as a ranking factor. (I still use the tag becuase there are applications that match meta tags, which could include the keyword meta tag. Plus it doesn't hurt).
+
+The "theme-color" meta tag is an HTML meta tag that can be included in the head section of a webpage. It is used to specify the color of the browser's chrome (e.g. the address bar, tab bar, and toolbars) on mobile devices when the webpage is displayed. This can be useful for creating a cohesive and branded look for your website on mobile devices.
+It's important to note that the "theme-color" meta tag is only supported by some browsers on mobile devices, and it does not have any effect on desktop browsers. Additionally, it does not affect the appearance of the webpage itself, only the color of the browser chrome.
+
+#### Social Media Display
+Open Graph meta tags are used to specify information about the webpage that is shared on social media platforms, such as the title, description, and image that should be displayed when the webpage is shared.
+
+The Open Graph protocol is a standardized set of meta tags that was created by Facebook to enable any webpage to become a rich object in a social graph. This means that when a webpage with Open Graph meta tags is shared on social media platforms, it can be displayed in a more engaging and interactive way, with a larger image, title, and description.
+
+Here's an example of how Open Graph meta tags might be used in the head section of a webpage:
+```HTML
+<meta property="og:title" content="The Best Chocolate Chip Cookies Recipe">
+<meta property="og:description" content="Get ready for the best chocolate chip cookies you've ever tasted! This easy recipe will give you soft and chewy cookies that are bursting with chocolate flavor. Perfect for a sweet treat anytime!">
+<meta property="og:image" content="https://www.example.com/chocolate-chip-cookies.jpg">
+<meta property="og:url" content="https://www.example.com/chocolate-chip-cookies">
+```
+In this example, the "og:title" and "og:description" tags specify the title and description of the webpage that should be displayed when it is shared on social media platforms. The "og:image" tag specifies the image that should be displayed, and the "og:url" tag specifies the URL of the webpage.
+
+Check out this visual:
+![image](https://user-images.githubusercontent.com/58868225/209022353-a63e8236-e441-4cb2-b447-14a4d9e3e203.png)
+
+Using Open Graph meta tags can help increase the visibility and engagement of a webpage on social media platforms, as it allows the webpage to be displayed in a more visually appealing and interactive way when it is shared. However, it's important to note that Open Graph meta tags are not used by all social media platforms, and they do not have any direct impact on a webpage's ranking in search results.
+
+#### Google Analytics Tag
+To use Google Analytics on a website, you will need to sign up for a Google Analytics account and obtain a tracking code. The tracking code is a JavaScript snippet that needs to be added to the website in order to track and collect data.
+
+One way to add the tracking code to a website is to use a Google Analytics tag. A Google Analytics tag is a piece of code that is added to the website in order to track and collect data using Google Analytics. The tag is typically added to the head section of the webpage's HTML code, or to a template file that is included on all pages of the website.
+
+Here's an example of how you might add a Google Analytics tag to a website:
+```HTML
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123456789-1');
+</script>
+```
+
+### Things that are NOT USED in this template's HTML head
+#### Favicons
+***Since I'm using Next.js the favicons are automatically handled.***
+
+A favicon, also known as a "favorite icon" or "shortcut icon," is a small icon that is displayed in the browser tab or bookmark of a webpage. It is meant to help users identify and distinguish different webpages when they have multiple tabs or bookmarks open at the same time. Favicons are typically 16x16 pixels or 32x32 pixels in size, and are saved in a specific file format, such as .ico or .png.
+
+#### Preloading
+***Preloading is not used in the HTML head becuase of SSG with Next.js.***
+
+Preloading is a technique that allows web developers to specify which resources (such as images, scripts, and stylesheets) should be loaded and made available for use by the browser as soon as possible, rather than waiting for them to be needed. This can help improve the performance and speed of a website by reducing the amount of time it takes for the browser to load and render the webpage. Example:
+```HTML
+<link rel="preload" href="/image.jpg" as="image" />
+<link rel="preload" as="font" type="font/woff2" href="../src/assets/fonts/inter-v12-latin-regular.woff2" crossorigin />
+```
+**Note** if you would like to preload fonts in the HTML head you can use https://gwfh.mranftl.com/fonts to download any font then simply add the woff2 version to the href.
+
+Using preloading can help improve the performance and speed of a website by reducing the amount of time it takes for the browser to load and render the webpage. However, it's important to use preloading judiciously, as preloading too many resources or resources that are not needed can actually have a negative impact on performance. It's a good idea to carefully consider which resources are most important and would benefit the most from preloading, and to use performance tools and techniques (such as loading critical resources first and lazy loading) to optimize the loading of resources on the webpage.
+
+#### Stylesheets
+***I load my global stylesheet in my _app.js.***
+
+Stylesheets are a way to specify the appearance and layout of a webpage or website. They contain a set of rules and styles that define how the various elements on a webpage should be displayed, including the font, color, size, and position of text and other content. Example:
+```HTML
+<link rel="stylesheet" href="/style.css">
+```
