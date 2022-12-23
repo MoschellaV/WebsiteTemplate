@@ -86,3 +86,52 @@ Stylesheets are a way to specify the appearance and layout of a webpage or websi
 ```HTML
 <link rel="stylesheet" href="/style.css">
 ```
+
+## Next.js
+
+### Fonts
+The following command is used to get started with fonts in Next.js. 
+```
+npm install @next/font
+```
+There are a few ways you can use Next.js to grab the fonts you want. But I choose to download fonts locally. To do this I use https://gwfh.mranftl.com/fonts.
+Here's how I would import my fonts in _app.js
+```JS
+// pages/_app.js
+// importing the font we would like to use
+import localFont from "@next/font/local";
+
+// font files are stored in pages/fonts
+// we can use multiple font files for a single family using an array
+const inter = localFont({
+    src: [
+        {
+            path: "./fonts/inter-v12-latin-regular.woff2",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./fonts/inter-v12-latin-700.woff2",
+            weight: "700",
+            style: "normal",
+        },
+    ],
+});
+
+// importing css file
+import "../styles/globals.css";
+
+export default function App({ Component, pageProps }) {
+    return (
+        <main className={inter.className}>
+            <Component {...pageProps} />
+        </main>
+    );
+}
+```
+## Material UI
+To install Material UI use the following
+```
+npm install @mui/material @mui/styled-engine-sc styled-components
+```
+Here are some reasources where you can find *creative inspiration*: [Creative Tim](https://www.creative-tim.com/), [Dribble](https://dribbble.com/), and [Pinterest](https://www.pinterest.com/).
