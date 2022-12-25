@@ -92,46 +92,34 @@ Stylesheets are a way to specify the appearance and layout of a webpage or websi
 ### Fonts
 The following command is used to get started with fonts in Next.js. 
 ```
-npm install @next/font
+npm install @next/font/
 ```
-There are a few ways you can use Next.js to grab the fonts you want. But I choose to download fonts locally. To do this I use https://gwfh.mranftl.com/fonts.
-Here's how I would import my fonts in _app.js
+There are a few ways you can use Next.js to grab the fonts you want. I use Google fonts with next because no requests are sent to Google by the browser. Check out more [here](https://nextjs.org/docs/basic-features/font-optimization). And the code would look something like this.
 ```JS
 // pages/_app.js
-// importing the font we would like to use
-import localFont from "@next/font/local";
+import { Inter } from '@next/font/google'
 
-// font files are stored in pages/fonts
-// we can use multiple font files for a single family using an array
-const inter = localFont({
-    src: [
-        {
-            path: "./fonts/inter-v12-latin-regular.woff2",
-            weight: "400",
-            style: "normal",
-        },
-        {
-            path: "./fonts/inter-v12-latin-700.woff2",
-            weight: "700",
-            style: "normal",
-        },
-    ],
-});
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ['latin'] })
+```
 
-// importing css file
-import "../styles/globals.css";
+## Mantine
+To install mantine:
+```
+npm install @mantine/core @mantine/hooks @mantine/next @emotion/server @emotion/react
+```
+Then simply wrap your main component with the ```<MantineProvider>``` component. For more visit [here](https://mantine.dev/guides/next/).
 
-export default function App({ Component, pageProps }) {
-    return (
-        <main className={inter.className}>
-            <Component {...pageProps} />
-        </main>
-    );
-}
-```
-## Material UI
-To install Material UI use the following
-```
-npm install @mui/material @mui/styled-engine-sc styled-components
-```
+Now just create a design and execute!
 Here are some reasources where you can find *creative inspiration*: [Creative Tim](https://www.creative-tim.com/), [Dribble](https://dribbble.com/), and [Pinterest](https://www.pinterest.com/).
+
+# Checklist
+* HTML Head
+  * Semantic HTML
+  * Proper meta tags (og's for facebook and twitter -- they're different, don't forget)
+  * Preloading/lazy loading important assets
+* Config
+  * Site must also be a PWA
+  * have a [manifest](https://www.simicart.com/manifest-generator.html/)
+  * ensure manifest includes ```"purpose": "any maskable"```
+* Test using Lighthouse (make sure you test on incognito)
