@@ -1,0 +1,86 @@
+/*==========
+MAIN NAVIGATION
+==========*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 10%;
+    position: fixed;
+    width: 100%;
+
+    -webkit-transition: background-color 1000ms ease;
+    -ms-transition: background-color 1000ms ease;
+    transition: background-color 1000ms ease;
+}
+.active {
+    background-color: aquamarine;
+    -webkit-transition: background-color 1000ms ease;
+    -o-transition: background-color 1000ms ease;
+    transition: background-color 1000ms ease;
+}
+
+.nav .link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+}
+
+.nav .link.away {
+    font-size: var(--fs-sm);
+    display: inline-block;
+    margin: 15px;
+    padding: 0 10px;
+    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.link.away:hover {
+    box-shadow: inset 100px 0 0 0 #8c4fff;
+    color: white;
+}
+
+/*==========
+COLLAPSED NAVIGATION
+==========*/
+/* side menu (768 px and lower) */
+.sideNavHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 5% 10px 30px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+.sideNav {
+    margin-top: 50px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+
+    filter: blur(5px);
+
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.open {
+    filter: blur(0);
+    width: 38%;
+}
+.open .link {
+    opacity: 1 !important;
+}
+.sideNav .link {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: 0.1s;
+}

@@ -1,10 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import Test from "./components/test";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
     return (
@@ -13,10 +7,10 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
                 {/* Canonical */}
-                <link rel="canonical" href="https://www.company.com" />
+                <link rel="canonical" href="https://www.templo.com" />
 
-                {/* Meta, Title, SEO */}
-                <title>Template</title>
+                {/* Meta, Title, SEO & Theme*/}
+                <title>Templo</title>
                 {/* Description should have max 160 characters */}
                 <meta
                     name="description"
@@ -27,23 +21,29 @@ export default function Home() {
                     content="react app template, template, website template, awesome template, react template, seo template react"
                 />
 
+                {/* link manifest.json */}
+                <link rel="manifest" href="/manifest.json" />
+                {/* apple icon */}
+                <link rel="apple-touch-icon" href="/logo.png"></link>
+                {/* this sets the color of url bar */}
+                <meta name="theme-color" content="#fff" />
+
                 {/* Social Media Display */}
                 <meta property="og:title" content="An Engaging Title Here" />
                 <meta property="og:description" content="An engaging, entertaining website description." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.yourwonderfulsite.com" />
+                <meta property="og:url" content="https://www.template.com" />
                 <meta property="og:image" content="/images/social.jpg" />
                 <meta property="og:image:secure_url" content="/images/social.jpg" />
 
-                {/* Favicons, Theme */}
-                {/* Use https://realfavicongenerator.net/ to generate and download your favicons */}
-                <meta name="theme-color" content="#ffffff" />
+                {/* Preload Images */}
+                <link rel="preload" href="/images/temploLogo.png" as="image" />
 
                 {/* Stylesheet is loaded in the index.js */}
 
                 {/* Add Google Analytics tag here */}
             </Head>
-            <Test />
+            <div style={{ minHeight: "1000px" }}></div>
         </>
     );
 }
