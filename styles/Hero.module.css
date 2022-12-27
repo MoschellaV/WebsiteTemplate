@@ -1,0 +1,174 @@
+/*==========
+HERO
+==========*/
+.heroWrapper {
+    min-height: 100vh;
+    background: rgb(224, 217, 140);
+    background: linear-gradient(
+        301deg,
+        rgba(224, 217, 140, 1) 7%,
+        rgba(247, 167, 108, 1) 40%,
+        rgba(236, 114, 114, 1) 87%
+    );
+}
+/* Left Side of Landing */
+.heroWrapperLeft {
+    margin: 19vh 0 0 12vw;
+}
+.heroWrapperLeft .highlight {
+    font-weight: 700;
+}
+.heroHeaderText {
+    font-size: var(--fs-xl);
+    color: #fff;
+    font-weight: 200;
+}
+.heroHeaderSubText {
+    color: #fff;
+    font-size: var(--fs-sm);
+    font-weight: 200;
+    max-width: 70%;
+}
+.viewMoreButton {
+    margin-top: 2vw;
+    margin-left: 0;
+}
+/* Right Side of Landing */
+.imageContainer {
+    position: relative;
+    margin-top: 10vh;
+    height: 100vh;
+    width: 50vw;
+}
+
+.templateImages {
+    box-shadow: 1px 3px 9px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 3px 9px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 9px 3px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+}
+
+/* image 1 position */
+.image1Box {
+    position: relative;
+
+    z-index: 1;
+
+    /* top: 34vh; */
+    top: 25vh;
+    left: 10vh;
+    /* left: 10vw; */
+    height: 22vw;
+    width: 30vw;
+}
+/* image 2 position and animation */
+.image2Box {
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 25vh;
+    left: 2vw;
+    height: 15vw;
+    width: 20vw;
+
+    -webkit-animation: 10s ease infinite image2BoxAnim;
+    animation: 10s ease infinite image2BoxAnim;
+}
+@keyframes image2BoxAnim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* image 3 position and animation */
+.image3Box {
+    position: absolute;
+
+    z-index: 3;
+
+    top: 7vh;
+    height: 12vw;
+    width: 26vw;
+
+    -webkit-animation: 16s ease infinite image3BoxAnim;
+    animation: 16s ease infinite image3BoxAnim;
+}
+@keyframes image3BoxAnim {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Media queries for image responsiveness */
+@media only screen and (max-width: 1212px) and (min-width: 992px) {
+    .heroWrapperLeft {
+        margin: 19vh 0 0 7vw;
+    }
+
+    .heroHeaderSubText {
+        max-width: 90%;
+    }
+    .image1Box {
+        left: 4vw;
+        height: 27vw;
+        width: 35vw;
+    }
+    .image2Box {
+        bottom: 25vh;
+        left: 2vw;
+        height: 19vw;
+        width: 26vw;
+    }
+    .image3Box {
+        top: 9vh;
+        height: 14vw;
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 401px) {
+    .heroWrapper {
+        min-height: 85vh;
+    }
+
+    .heroHeaderText {
+        max-width: 80%;
+    }
+    .heroHeaderSubText {
+        max-width: 70%;
+    }
+    .viewMoreButton {
+        margin-top: 3vw;
+        font-size: var(--fs-sm);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .heroWrapper {
+        min-height: 80vh;
+    }
+    .heroWrapperLeft {
+        margin: 19vh 7vw 0 12vw;
+    }
+    .heroHeaderText {
+        font-size: var(--fs-xl);
+    }
+    .heroHeaderSubText {
+        margin-top: 2vh;
+        max-width: 90%;
+    }
+    .viewMoreButton {
+        margin-top: 5vh;
+        font-size: var(--fs-sm);
+    }
+}

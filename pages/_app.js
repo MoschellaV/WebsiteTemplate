@@ -3,9 +3,11 @@ import Navigation from "../components/navigation";
 // importing css file
 import "../styles/globals.css";
 
-import { Inter } from "@next/font/google";
+import { Inter, Roboto_Condensed } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+// importing roboto only for nav
+const roboto_Condensed = Roboto_Condensed({ weight: ["400"], subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
     return (
@@ -14,14 +16,14 @@ export default function App({ Component, pageProps }) {
             withNormalizeCSS
             theme={{
                 /** Put your mantine theme override here */
+
                 colorScheme: "light",
                 fontFamily: "inherit",
                 defaultRadius: 0,
                 colors: {
-                    // Add your color
+                    whites: ["#fff", "#FAF9F6"],
                     winterBlue: ["#72FFFF", "#00D7FF", "#0096FF", "#5800FF"],
-                    // or replace default theme color
-                    blue: ["#72FFFF", "#00D7FF", "#0096FF", "#5800FF"],
+                    shadows: ["0px 0px 20px rgb(255,255,255)", "0px 0px 10px rgba(88, 0, 255, 0.4)"],
                 },
                 focusRingStyles: {
                     // focus styles applied to components that are based on Input
@@ -30,8 +32,8 @@ export default function App({ Component, pageProps }) {
                 },
             }}
         >
-            <main className={inter.style.fontFamily}>
-                <Navigation />
+            <main className={inter.className}>
+                <Navigation roboto_Condensed={roboto_Condensed} />
                 <Component {...pageProps} />
             </main>
         </MantineProvider>

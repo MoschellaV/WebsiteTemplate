@@ -4,17 +4,11 @@ import Link from "next/link";
 import button1 from "./reusableComponents/button1";
 import { Burger } from "@mantine/core";
 
-const Navigation = () => {
+const Navigation = ({ roboto_Condensed }) => {
     const [scrollDistance, setScrollDistance] = useState(false);
     const [windowWidth, setWindowWidth] = useState(0);
     const [opened, setOpened] = useState(false);
-    const title = opened ? "Close navigation" : "Open navigation";
     const { classes } = button1();
-
-    // changing background of navbar when user scrolls lower
-    const changeNavBackground = () => {
-        document.getElementById("nav").style.backgroundColor = "#000";
-    };
 
     // opening and closing the side nav
     const handleSideNav = () => {
@@ -45,54 +39,62 @@ const Navigation = () => {
 
     if (windowWidth > 768) {
         return (
-            <div id="nav" className={`${styles.nav} ${scrollDistance ? styles.active : ""}`}>
-                <Link className={styles.link} href="/">
-                    <img src="/images/temploLogo.png" height="36" width="150" alt="BestTemplate" />
+            <nav id="nav" className={`${styles.nav} ${scrollDistance ? styles.active : ""}`}>
+                <Link href="/">
+                    <h2 className={`${roboto_Condensed.className} ${styles.brandName}`}>Templo</h2>
                 </Link>
                 <div>
-                    <Link className={`${styles.link} ${styles.away}`} href="/about">
+                    <Link className={styles.linkAway} href="/about">
                         About
                     </Link>
-                    <Link className={`${styles.link} ${styles.away}`} href="/about">
+                    <Link className={styles.linkAway} href="/about">
                         Services
                     </Link>
-                    <Link className={`${styles.link} ${styles.away}`} href="/shop">
+                    <Link className={styles.linkAway} href="/shop">
                         Our Team
                     </Link>
-                    <button type="button" className={classes.button}>
-                        Contact
-                    </button>
+                    {scrollDistance ? (
+                        <button type="button" className={classes.blackButton}>
+                            Contact
+                        </button>
+                    ) : (
+                        <button type="button" className={classes.button}>
+                            Contact
+                        </button>
+                    )}
                 </div>
-            </div>
+            </nav>
         );
     } else {
         return (
             <>
-                <div className={`${styles.sideNavHeader} ${scrollDistance ? styles.active : ""} `}>
-                    <div width="25" height="25">
-                        <Burger opened={opened} onClick={handleSideNav} />
+                <nav>
+                    <div className={`${styles.sideNavHeader} ${scrollDistance ? styles.active : ""} `}>
+                        <div width="25" height="25">
+                            <Burger opened={opened} onClick={handleSideNav} />
+                        </div>
+                        <Link href="/">
+                            <h2 className={`${roboto_Condensed.className} ${styles.brandName}`}>Templo</h2>
+                        </Link>
                     </div>
-                    <img src="/images/temploLogo.png" height="36" width="150" alt="BestTemplate" />
-                </div>
 
-                <div id="sideNav" className={`${styles.sideNav} ${opened ? styles.open : ""}`}>
-                    {/* <Burger sx={{ paddingTop: "30px", paddingLeft: "15%" }} opened={opened} onClick={handleSideNav} /> */}
-
-                    <div>
-                        <Link className={`${styles.link} ${styles.away}`} href="/about">
-                            About
-                        </Link>
-                        <Link className={`${styles.link} ${styles.away}`} href="/about">
-                            Services
-                        </Link>
-                        <Link className={`${styles.link} ${styles.away}`} href="/shop">
-                            Our Team
-                        </Link>
-                        <button type="button" className={classes.button}>
-                            Contact
-                        </button>
+                    <div id="sideNav" className={`${styles.sideNav} ${opened ? styles.open : ""}`}>
+                        <div className={styles.linkContainer}>
+                            <Link className={styles.linkAway} href="/about">
+                                About
+                            </Link>
+                            <Link className={styles.linkAway} href="/about">
+                                Services
+                            </Link>
+                            <Link className={styles.linkAway} href="/shop">
+                                Our Team
+                            </Link>
+                            <Link className={styles.linkAway} href="/shop">
+                                Contact
+                            </Link>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </>
         );
     }

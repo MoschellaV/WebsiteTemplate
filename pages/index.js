@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/hero";
 
 export default function Home() {
     return (
@@ -36,13 +37,11 @@ export default function Home() {
                 <meta property="og:image" content="/images/social.jpg" />
                 <meta property="og:image:secure_url" content="/images/social.jpg" />
 
-                {/* Preload Images */}
-                <link rel="preload" href="/images/temploLogo.png" as="image" />
-
                 {/* Stylesheet is loaded in the index.js */}
 
                 {/* Add Google Analytics tag here */}
             </Head>
+            <Hero />
             <div style={{ minHeight: "1000px" }}></div>
         </>
     );

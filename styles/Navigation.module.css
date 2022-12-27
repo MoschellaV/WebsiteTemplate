@@ -8,35 +8,49 @@ MAIN NAVIGATION
     background-color: transparent;
     padding: 10px 10%;
     position: fixed;
+    z-index: 100;
     width: 100%;
 
     -webkit-transition: background-color 1000ms ease;
     -ms-transition: background-color 1000ms ease;
     transition: background-color 1000ms ease;
 }
+/* .active handles nav color when user scolls past a certain point */
 .active {
-    background-color: aquamarine;
+    background-color: #fff;
     -webkit-transition: background-color 1000ms ease;
     -o-transition: background-color 1000ms ease;
     transition: background-color 1000ms ease;
 }
-
-.nav .link {
-    text-decoration: none;
+.active .linkAway {
     color: #000;
-    font-weight: 200;
 }
-
-.nav .link.away {
-    font-size: var(--fs-sm);
-    display: inline-block;
-    margin: 15px;
-    padding: 0 10px;
+.active .brandName {
+    color: #000;
+}
+.brandName {
+    color: #fff;
+    font-size: var(--fs-sm + 1rem);
+    text-decoration: none;
     transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
-.link.away:hover {
-    box-shadow: inset 100px 0 0 0 #8c4fff;
-    color: white;
+
+.linkAway {
+    display: inline-block;
+    color: #fff;
+
+    font-size: var(--fs-xs);
+    font-weight: 200;
+    text-decoration: none;
+
+    margin: 15px;
+    padding: 0 10px;
+
+    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.nav .linkAway:hover {
+    box-shadow: inset 100px 0 0 0 #fff;
+    color: #000;
 }
 
 /*==========
@@ -47,22 +61,27 @@ COLLAPSED NAVIGATION
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background-color: transparent;
-    padding: 10px 5% 10px 30px;
+    background-color: #fff;
+    padding: 20px 5% 10px 30px;
+    z-index: 100;
     position: fixed;
     width: 100%;
-    background-color: #fff;
 }
 .sideNav {
-    margin-top: 50px;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
     background-color: #fff;
     overflow-x: hidden;
+
+    position: fixed;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 0;
+
+    z-index: 5;
 
     filter: blur(5px);
 
@@ -70,17 +89,39 @@ COLLAPSED NAVIGATION
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.sideNav .linkContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
 .open {
     filter: blur(0);
     width: 38%;
 }
-.open .link {
+.open .linkAway {
     opacity: 1 !important;
 }
-.sideNav .link {
-    margin-top: 10px;
-    text-align: center;
-    display: block;
+.sideNavHeader .brandName {
+    color: #000;
+}
+.sideNav .linkAway {
+    margin-top: 20px;
+    color: #000;
+
     opacity: 0;
-    transition: 0.1s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.sideNav .linkAway:hover {
+    transform: scale(0.9);
+}
+@media only screen and (max-width: 400px) {
+    .open {
+        filter: blur(0);
+        width: 50%;
+    }
 }

@@ -1,8 +1,9 @@
 /* Default */
 :root {
-    --fs-xl: clamp(2rem, 10vw + 1rem, 8rem);
-    --fs-med: clamp(2rem, 10vw + 1rem, 8rem);
-    --fs-sm: clamp(0.3rem, 1vw + 0.4rem, 1rem);
+    --fs-xl: clamp(2.3rem, 4vw + 1rem, 7rem);
+    --fs-med: clamp(1.3rem, 2.5vw + 1rem, 3rem);
+    --fs-sm: clamp(0.9rem, 0.8vw + 0.4rem, 2rem);
+    --fs-xs: clamp(0.9rem, 0.6vw + 0.4rem, 1rem);
 }
 
 /* Tablets */
@@ -43,6 +44,9 @@ a {
     font-size: 1.125em;
     line-height: 1.5em;
     margin: 0;
+}
+a:-webkit-any-link {
+    text-decoration: none;
 }
 p,
 li {
