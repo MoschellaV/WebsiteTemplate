@@ -16,19 +16,19 @@ export default function App({ Component, pageProps }) {
             withNormalizeCSS
             theme={{
                 /** Put your mantine theme override here */
-
                 colorScheme: "light",
                 fontFamily: "inherit",
                 defaultRadius: 0,
                 colors: {
                     whites: ["#fff", "#FAF9F6"],
+                    warmColors: ["#ec7272", "#f7a76c", "#e0d98c"],
                     winterBlue: ["#72FFFF", "#00D7FF", "#0096FF", "#5800FF"],
                     shadows: ["0px 0px 20px rgb(255,255,255)", "0px 0px 10px rgba(88, 0, 255, 0.4)"],
                 },
                 focusRingStyles: {
                     // focus styles applied to components that are based on Input
                     // styled are added with &:focus selector
-                    inputStyles: (theme) => ({ outline: `2px solid ${theme.colors.deepBlue[1]}` }),
+                    inputStyles: (theme) => ({ outline: `2px solid ${theme.colors.warmColors[0]}` }),
                 },
             }}
         >

@@ -1,0 +1,84 @@
+/*==========
+About
+==========*/
+
+.aboutTextWrapper {
+    margin: 20vh 12vw 0;
+}
+.aboutTextWrapper .aboutHeader {
+    font-size: var(--fs-med);
+    color: #ec7272;
+}
+
+.aboutTextWrapper .aboutText {
+    font-size: var(--fs-xs);
+    max-width: 60vw;
+}
+.aboutTextWrapper .captionWrapper {
+    display: inline-block;
+}
+.aboutTextWrapper .caption {
+    padding: 90px 0 60px;
+    font-size: var(--fs-xs);
+}
+.aboutTextWrapper .highlight {
+    font-weight: 700;
+}
+.aboutTextWrapper .subscribeCard {
+    width: 30vw;
+
+    box-shadow: -3px -1px 27px -12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -3px -1px 27px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px -1px 27px -12px rgba(0, 0, 0, 0.75);
+}
+.aboutTextWrapper .subscribeCard .cardHeader {
+    font-size: var(--fs-sm);
+}
+.aboutTextWrapper .subscribeCard .inputWrapper {
+    margin: 20px 0;
+}
+.aboutTextWrapper .subscribeCard .checkbox {
+    margin: 20px 8px 20px 0;
+}
+.picContainer {
+    width: 76vw;
+    height: 65vh;
+    position: absolute;
+
+    z-index: -1;
+}
+.picContainer .pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -2px 4px 87px -12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 4px 87px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 4px 87px -12px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (min-width: 992px) {
+    .aboutTextWrapper .aboutText {
+        margin-left: 7vw;
+        max-width: 90vw;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .aboutTextWrapper {
+        margin: 10vh 12vw 0;
+    }
+    .aboutTextWrapper .subscribeCard {
+        width: 100%;
+        margin-top: 4vh;
+    }
+    .aboutTextWrapper .caption {
+        padding: 20px 0 60px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .picContainer {
+        width: 70vw;
+        height: 40vh;
+        position: relative;
+
+        margin: 10px;
+    }
+}

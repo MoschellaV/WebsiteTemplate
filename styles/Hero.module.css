@@ -139,7 +139,7 @@ HERO
 }
 @media only screen and (max-width: 991px) and (min-width: 401px) {
     .heroWrapper {
-        min-height: 85vh;
+        min-height: 78vh;
     }
 
     .heroHeaderText {

@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Hero from "../components/hero";
+import About from "../components/about";
+import FeaturesTabs from "../components/featuresTabs";
+import TemplatesCarousel from "../components/templateCarousel";
 
 export default function Home() {
     return (
@@ -42,6 +45,9 @@ export default function Home() {
                 {/* Add Google Analytics tag here */}
             </Head>
             <Hero />
+            <About />
+            <FeaturesTabs />
+            <TemplatesCarousel />
             <div style={{ minHeight: "1000px" }}></div>
         </>
     );

@@ -1,0 +1,24 @@
+.arrowContainer {
+    position: relative;
+    display: inline-block;
+    width: 6vw;
+    height: 6vh;
+}
+
+.arrowContainer .arrow {
+    margin: 10px 0;
+    -webkit-animation: 4s ease infinite arrowAnim;
+    animation: 4s ease infinite arrowAnim;
+}
+
+@keyframes arrowAnim {
+    0% {
+        transform: translateY(-10px) rotate(90deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(90deg);
+    }
+    100% {
+        transform: translateY(-10px) rotate(90deg);
+    }
+}
